@@ -59,5 +59,5 @@ function startQuiz() {}
 function showQuestion() {}
 function checkAnswer(selectedOption) {}
 function updateScore() {}
-function endQuiz() {
-    
+function endQuiz() {}
+
