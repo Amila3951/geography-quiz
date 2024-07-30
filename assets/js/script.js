@@ -53,4 +53,11 @@ const questions = [{
 const questionText = document.getElementById("question-text");
 const answerOptions = document.getElementById("answer-options");
 const scoreDisplay = document.getElementById("score");
-const finalScoreDisplay = document.getElementById("final-score")
+const finalScoreDisplay = document.getElementById("final-score");
+
+function startQuiz() {}
+function showQuestion() {}
+function checkAnswer(selectedOption) {}
+function updateScore() {}
+function endQuiz() {
+    
