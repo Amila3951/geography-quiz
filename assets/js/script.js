@@ -78,7 +78,16 @@ function showQuestion() {
     });
 }
 
-function checkAnswer(selectedOption) {}
+function checkAnswer(selectedOption) {
+    
+
 function updateScore() {}
 function endQuiz() {}
 
+// Event listeners
+document.getElementById("start-button").addEventListener("click", startQuiz);
+document.getElementById("restart-button").addEventListener("click", () => {
+    currentQuestionIndex = 0;
+    correctAnswers = 0;
+    incorrectAnswers = 0;
+    updateScore();
