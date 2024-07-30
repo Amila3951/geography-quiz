@@ -79,6 +79,35 @@ function showQuestion() {
 }
 
 function checkAnswer(selectedOption) {
+    const currentQuestion = questions[currentQuestionIndex];
+    const answerButtons = answerOptions.querySelectorAll('button');
+
+    answerButtons.forEach(button => {
+        if (button.textContent === currentQuestion.answer) {
+            button.classList.add('correct');
+        } else if (button.textContent === selectedOption) { // When choosed answer is incorrect, it became red
+            button.classList.add('incorrect');
+        }
+        button.disabled = true;
+    });
+
+    if (selectedOption === currentQuestion.answer) {
+        correctAnswers++;
+    } else {
+        incorrectAnswers++;
+    }
+
+    updateScore();
+
+    setTimeout(() => { // One second delay until next question
+        if (currentQuestionIndex < questions.length - 1) {
+            currentQuestionIndex++;
+            showQuestion();
+        } else {
+            endQuiz();
+        }
+    }, 1000);
+}
     
 
 function updateScore() {}
@@ -90,4 +119,5 @@ document.getElementById("restart-button").addEventListener("click", () => {
     currentQuestionIndex = 0;
     correctAnswers = 0;
     incorrectAnswers = 0;
-    updateScore();
+    updateScore()
+});
