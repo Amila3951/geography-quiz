@@ -25,7 +25,6 @@ h1 {
     color: rgb(187, 81, 20);
     font-size: 36px;
     margin-bottom: 24px;
-    /* Udaljavanje naslova od slike */
 }
 
 #title-container {
@@ -38,10 +37,8 @@ h1 {
 #title-container h1 {
     position: absolute;
     top: 50%;
-    /* Postavljanje na vertikalnu sredinu */
     left: 50%;
     transform: translate(-50%, -50%);
-    /* Centriranje horizontalno i vertikalno */
     z-index: 1;
     color: rgb(0, 0, 0);
     font-size: 36px;
@@ -51,7 +48,6 @@ h1 {
 #title-container::before {
     content: "";
     background-image: url('microsoftteams-image2.jpg');
-    /* Zamijenite s vašom putanjom */
     background-size: cover;
     background-position: center;
     opacity: 0.5;
@@ -62,7 +58,6 @@ h1 {
     height: 100%;
     border-radius: 8px;
 }
-
 /* Content Container */
 #content-container {
     display: flex;
