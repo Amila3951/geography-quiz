@@ -113,7 +113,11 @@ function updateScore() {
     scoreDisplay.textContent = `Correct: ${correctAnswers} | Incorrect: ${incorrectAnswers}`;
 }
 
-function endQuiz() {}
+function endQuiz() {
+    document.getElementById("question-screen").style.display = "none";
+    document.getElementById("end-screen").style.display = "block";
+    finalScoreDisplay.textContent = `Your final score: ${correctAnswers} out of ${questions.length}`;
+}
 
 // Event listeners
 document.getElementById("start-button").addEventListener("click", startQuiz);
@@ -122,4 +126,10 @@ document.getElementById("restart-button").addEventListener("click", () => {
     correctAnswers = 0;
     incorrectAnswers = 0;
     updateScore()
+    document.getElementById("end-screen").style.display = "none";
+    document.getElementById("question-screen").style.display = "block";
+    showQuestion();
+});
+document.getElementById("exit-button").addEventListener("click", () => {
+    window.location.reload();
 });
