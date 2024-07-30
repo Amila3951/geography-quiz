@@ -65,7 +65,19 @@ function startQuiz() {
     showQuestion();
 }
 
-function showQuestion() {}
+function showQuestion() {
+    const currentQuestion = questions[currentQuestionIndex];
+    questionText.textContent = currentQuestion.question;
+
+    answerOptions.innerHTML = "";
+    currentQuestion.options.forEach(option => {
+        const button = document.createElement("button");
+        button.textContent = option;
+        button.addEventListener("click", () => checkAnswer(option));
+        answerOptions.appendChild(button);
+    });
+}
+
 function checkAnswer(selectedOption) {}
 function updateScore() {}
 function endQuiz() {}
