@@ -108,9 +108,11 @@ function checkAnswer(selectedOption) {
         }
     }, 1000);
 }
-    
 
-function updateScore() {}
+function updateScore() {
+        scoreDisplay.textContent = `Correct: ${correctAnswers} | Incorrect: ${incorrectAnswers}`;
+    }
+
 function endQuiz() {}
 
 // Event listeners
