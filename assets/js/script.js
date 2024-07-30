@@ -49,3 +49,8 @@ const questions = [{
     answer: "Antartica"
 },
 ];
+
+const questionText = document.getElementById("question-text");
+const answerOptions = document.getElementById("answer-options");
+const scoreDisplay = document.getElementById("score");
+const finalScoreDisplay = document.getElementById("final-score")
