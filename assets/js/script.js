@@ -1,3 +1,4 @@
+// Array of questions, each with question text, answer options, and the correct answer
 const questions = [{
         question: "Where is the Colosseum?",
         options: ["Berlin", "Madrid", "Paris", "Rome"],
@@ -50,26 +51,31 @@ const questions = [{
     },
 ];
 
+// Variables to track quiz progress
 let currentQuestionIndex = 0;
 let correctAnswers = 0;
 let incorrectAnswers = 0;
 
+// Get references to essential HTML elements for displaying quiz content
 const questionText = document.getElementById("question-text");
 const answerOptions = document.getElementById("answer-options");
 const scoreDisplay = document.getElementById("score");
 const finalScoreDisplay = document.getElementById("final-score");
 
+// Function to start the quiz by hiding the start screen and showing the first question
 function startQuiz() {
     document.getElementById("start-screen").style.display = "none";
     document.getElementById("question-screen").style.display = "block";
     showQuestion();
 }
 
+// Function to display the current question and its options
 function showQuestion() {
     const currentQuestion = questions[currentQuestionIndex];
     questionText.textContent = currentQuestion.question;
 
     answerOptions.innerHTML = "";
+    // Clear previous options
     currentQuestion.options.forEach(option => {
         const button = document.createElement("button");
         button.textContent = option;
@@ -78,17 +84,18 @@ function showQuestion() {
     });
 }
 
+// Function to check if the selected answer is correct or incorrect
 function checkAnswer(selectedOption) {
     const currentQuestion = questions[currentQuestionIndex];
     const answerButtons = answerOptions.querySelectorAll('button');
 
     answerButtons.forEach(button => {
         if (button.textContent === currentQuestion.answer) {
-            button.classList.add('correct');
+            button.classList.add('correct'); // Highlight correct answer
         } else if (button.textContent === selectedOption) { // When choosed answer is incorrect, it became red
             button.classList.add('incorrect');
         }
-        button.disabled = true;
+        button.disabled = true; // Disable all buttons after selection
     });
 
     if (selectedOption === currentQuestion.answer) {
@@ -109,17 +116,19 @@ function checkAnswer(selectedOption) {
     }, 1000);
 }
 
+// Function to update the displayed score
 function updateScore() {
     scoreDisplay.textContent = `Correct: ${correctAnswers} | Incorrect: ${incorrectAnswers}`;
 }
 
+// Function to end the quiz and display the final score
 function endQuiz() {
     document.getElementById("question-screen").style.display = "none";
     document.getElementById("end-screen").style.display = "block";
     finalScoreDisplay.textContent = `Your final score: ${correctAnswers} out of ${questions.length}`;
 }
 
-// Event listeners
+// Event listeners for the start, restart, and exit buttons
 document.getElementById("start-button").addEventListener("click", startQuiz);
 document.getElementById("restart-button").addEventListener("click", () => {
     currentQuestionIndex = 0;

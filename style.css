@@ -58,6 +58,7 @@ h1 {
     height: 100%;
     border-radius: 8px;
 }
+
 /* Content Container */
 #content-container {
     display: flex;
@@ -144,6 +145,7 @@ p {
 #exit-button:hover,
 #exit-button:focus {
     background-color: #700a15;
+    /* Hover color */
     outline: none;
 }
 
