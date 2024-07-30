@@ -50,12 +50,21 @@ const questions = [{
 },
 ];
 
+let currentQuestionIndex = 0;
+let correctAnswers = 0;
+let incorrectAnswers = 0; 
+
 const questionText = document.getElementById("question-text");
 const answerOptions = document.getElementById("answer-options");
 const scoreDisplay = document.getElementById("score");
 const finalScoreDisplay = document.getElementById("final-score");
 
-function startQuiz() {}
+function startQuiz() {
+    document.getElementById("start-screen").style.display = "none";
+    document.getElementById("question-screen").style.display = "block";
+    showQuestion();
+}
+
 function showQuestion() {}
 function checkAnswer(selectedOption) {}
 function updateScore() {}
