@@ -1,131 +1,124 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Geography Quiz
 
-Welcome Amila Beganovic,
+This is a fun and interactive geography quiz designed to test your knowledge of the world. It covers a wide range of topics including countries, capitals, landmarks, and more. The quiz is built using HTML, CSS, and JavaScript, providing a seamless and engaging experience.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![Am I Responesive](assets/images/amiresponesive.png)
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+### First time user goals
 
-## Gitpod Reminders
+- Geography quiz is designed to test users knowledge in a fun and interactive way.
+- Users are aware of the multiple-choice format, instant feedback, score tracking, and restart/exit options.
+- User has instructions how to play quiz, answer questions and trak score points.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Features
 
-`python3 -m http.server`
+### Fist page / Start page
 
-A blue button should appear to click: _Make Public_,
+![Home Page](assets/images/Home.page.png)
 
-Another blue button should appear to click: _Open Browser_.
+ Home page includes:
+- Name "Geograpghy quiz" with background image of a globe as a symbol of geography
+- Button "Start Quiz", by clicking which you start the quiz and open the questions
+- Instructions part with clearly written instructions for playing the quiz
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+## Questions & Answers
+#### Answering Questions
+- Multiple Choice Format: Each question presents a set of multiple-choice answer options.
+- Click to Select: Users click on the button corresponding to their chosen answer.
+![Multiple Answers](assets/images/multipleanswers.png)
+**Instant Feedback:**
+- Correct Answer: If the selected answer is correct, the button turns green to provide positive reinforcement.
+![Coorrect Answer](assets/images/correctanswer.png)
+- Incorrect Answer: If the selected answer is incorrect, the button turns red, and the correct answer is highlighted in green.
+![Incorrect Answer](assets/images/inccorectanswer.png)
+- Score Update: The score display (showing the number of correct and incorrect answers) updates immediately after each answer selection.
 
-A blue button should appear to click: _Make Public_,
+![Score Update](assets/images/score.png)
 
-Another blue button should appear to click: _Open Browser_.
+#### Hover Effects
+- Visual Cue: When hovering over an answer button, the button changes color slightly to indicate it's interactive.
+- No Premature Reveal: The hover effect does not reveal whether an answer is correct or incorrect before it's selected. This maintains the challenge and prevents accidental hints.
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+![Hover Effects](assets/images/hovereffect.png)
 
-To log into the Heroku toolbelt CLI:
+#### Progress and Navigation
+- Automatic Progression: After a brief delay (one second) following an answer, the quiz automatically advances to the next question.
+- Final Score: When all questions are answered, the quiz ends, and the final score screen is displayed.
+- Restart and Exit: The final score screen provides options to restart the quiz or exit back to the beginning.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+![End-page](assets/images/End-page.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+### Responsive Design
+The site is designed to be fully responsive, adapting to various screen sizes and devices.
 
-### Connecting your Mongo database
+#### Mobile View (Samsung Galaxy S8+)
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+![Samsung Galaxy S8+](assets/images/SamsungGalaxyS8+.png)
 
-------
+### Design and Validation Tools
 
-## Release History
+Various tools and validators were used to ensure the site is well-designed and compliant with web standards.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+#### Color Palette
+A consistent color palette was chosen to maintain a cohesive look throughout the site: 
+- Neutral background color with highlighted letters in stronger colors
 
-**June 18, 2024,** Add Mongo back into template
+### Validation
+#### HTML Validation
+- The HTML code was validated to ensure compliance with web standards.
+- The console log displays a single warning due to the < h2 > element being initially empty. This element is dynamically populated with the current quiz question during runtime as the user progresses through the quiz.
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+![HTML Validation](assets/images/HTMLValidator.png)
 
-**May 28 2024:** Fix Mongo and Links installs
+#### CSS Validation
+- CSS code was validated to ensure compliance with web standards.
 
-**April 26 2024:** Update node version to 16
+![CSS Validation](assets/images/CSSValidator.png)
 
-**September 20 2023:** Update Python version to 3.9.17.
+#### JavaScript Validation
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+ - This JavaScript code has been validated using JSHint and passes all checks.
+ - No errors or warnings were found.
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+ ![Java Script Validation](assets/images/JSValidation.png)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Lighthouse check
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- Lighthouse audits confirm that this website delivers an exceptional user experience, excelling in performance, accessibility, best practices, and SEO, resulting in a flawless score across all metrics.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+![Lighthouse](assets/images/lighthouse.png)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Techonogy used
+- **HTML**: Structure of the web pages.
+- **CSS**: Styling of the web pages, including responsive design for various screen sizes.
+- **JavaScript**: Interactive features such as buttons, choosing options and score tracking.
+- **Google Fonts**: Custom fonts for a unique look and feel.
+- **Favicon**: Globe icon for the website.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Deployment
+- The site was deployed using GitHub Pages.
+- The repository can be found at: 
+- The deployed site can be found at:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+#### GitHub Deployment
+- Login or Sign Up to GitHub.
+- Open the project repository.
+- Navigate to "Settings" on the navigation bar under the repository title.
+- Click on "Pages" in the left-hand navigation panel.
+- Under "Source", choose which branch to deploy (Main or Master).
+- Choose which folder to deploy from, usually "/root".
+- Click "Save", then wait for the page to be deployed.
+- The URL is displayed above "Source".
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Meta information
+- **Description**: "Test your knowledge of world geography with this interactive quiz! Challenge yourself with questions about countries, capitals, continents, landmarks, and more. Fun and educational for geography enthusiasts of all ages."
+- **Keywords**: "geography, quiz, Test, game, countries, world, destinations, knowledge"
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Favicon
+- [Favicon](https://www.flaticon.com/search?word=globe)
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Images
+- Globe Image: [iStock Photo](https://www.istockphoto.com/de/fotos/world-rules)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+## Credits
+The score tracking feature in this application was inspired by the implementation found in the "Love Maths" project. The code is adapted and refined the score tracking logic to align with the specific requirements of a geography quiz.

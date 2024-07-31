@@ -185,12 +185,12 @@ p {
 #answer-options button.correct {
     background-color: #28a745;
     /* Green for correct */
-    border-color: #28a745;
+    border-color: #1d7a33;
 }
 
 /* Incorrect Answer */
 #answer-options button.incorrect {
     background-color: #dc3545;
     /* Red for incorrect */
-    border-color: #dc3545;
+    border-color: #a02a36;
 }

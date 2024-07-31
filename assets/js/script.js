@@ -134,7 +134,7 @@ document.getElementById("restart-button").addEventListener("click", () => {
     currentQuestionIndex = 0;
     correctAnswers = 0;
     incorrectAnswers = 0;
-    updateScore()
+    updateScore();
     document.getElementById("end-screen").style.display = "none";
     document.getElementById("question-screen").style.display = "block";
     showQuestion();
