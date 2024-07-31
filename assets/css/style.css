@@ -47,7 +47,8 @@ h1 {
 
 #title-container::before {
     content: "";
-    background-image: url('microsoftteams-image2.jpg');
+    background-image: url("/assets/images/microsoftteams-image2.jpg");
+
     background-size: cover;
     background-position: center;
     opacity: 0.5;
@@ -128,23 +129,23 @@ p {
 
 /* Play Again Button */
 #restart-button {
-    background-color: #12a3bd;
+    background-color: #149eb6;
 }
 
 #restart-button:hover,
 #restart-button:focus {
-    background-color: #1fb4a0;
+    background-color: #7bffed;
     outline: none;
 }
 
 /* Exit Button */
 #exit-button {
-    background-color: #dc3545;
+    background-color: #b81717;
 }
 
 #exit-button:hover,
 #exit-button:focus {
-    background-color: #700a15;
+    background-color: #f87c88;
     /* Hover color */
     outline: none;
 }
