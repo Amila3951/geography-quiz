@@ -25,12 +25,18 @@ This is a fun and interactive geography quiz designed to test your knowledge of 
 #### Answering Questions
 - Multiple Choice Format: Each question presents a set of multiple-choice answer options.
 - Click to Select: Users click on the button corresponding to their chosen answer.
+
 ![Multiple Answers](assets/images/multipleanswers.png)
+
 **Instant Feedback:**
 - Correct Answer: If the selected answer is correct, the button turns green to provide positive reinforcement.
+
 ![Coorrect Answer](assets/images/correctanswer.png)
+
 - Incorrect Answer: If the selected answer is incorrect, the button turns red, and the correct answer is highlighted in green.
+
 ![Incorrect Answer](assets/images/inccorectanswer.png)
+
 - Score Update: The score display (showing the number of correct and incorrect answers) updates immediately after each answer selection.
 
 ![Score Update](assets/images/score.png)
@@ -62,6 +68,11 @@ Various tools and validators were used to ensure the site is well-designed and c
 #### Color Palette
 A consistent color palette was chosen to maintain a cohesive look throughout the site: 
 - Neutral background color with highlighted letters in stronger colors
+
+### Major Bugs & Fixes
+1. Background Image
+   - **Issue**: The image on the deployed page is not displaying and shows a 404 error, indicating that the server cannot find the image file at the specified path.
+   - **Solution**: Rectify the image path within the CSS file to ensure it accurately reflects the file's location on the deployed server, thereby resolving the 404 error and enabling successful image rendering on the webpage.
 
 ### Validation
 #### HTML Validation
@@ -97,7 +108,7 @@ A consistent color palette was chosen to maintain a cohesive look throughout the
 ### Deployment
 - The site was deployed using GitHub Pages.
 - The repository can be found at: https://github.com/Amila3951/geography-quiz.git
-- The deployed site can be found at:
+- The deployed site can be found at: https://amila3951.github.io/geography-quiz/
 
 #### GitHub Deployment
 - Login or Sign Up to GitHub.
@@ -114,9 +125,11 @@ A consistent color palette was chosen to maintain a cohesive look throughout the
 - **Keywords**: "geography, quiz, Test, game, countries, world, destinations, knowledge"
 
 ### Favicon
+
 - [Favicon](https://www.flaticon.com/search?word=globe)
 
 ### Images
+
 - Globe Image: [iStock Photo](https://www.istockphoto.com/de/fotos/world-rules)
 
 ## Credits
