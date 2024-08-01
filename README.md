@@ -96,7 +96,7 @@ A consistent color palette was chosen to maintain a cohesive look throughout the
 
 ### Deployment
 - The site was deployed using GitHub Pages.
-- The repository can be found at: 
+- The repository can be found at: https://github.com/Amila3951/geography-quiz.git
 - The deployed site can be found at:
 
 #### GitHub Deployment
