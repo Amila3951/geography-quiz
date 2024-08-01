@@ -4,7 +4,7 @@ This is a fun and interactive geography quiz designed to test your knowledge of 
 
 ![Am I Responesive](assets/images/amiresponesive.png)
 
-### First time user goals
+### First-time user goals
 
 - Geography quiz is designed to test users knowledge in a fun and interactive way.
 - Users are aware of the multiple-choice format, instant feedback, score tracking, and restart/exit options.
@@ -17,9 +17,9 @@ This is a fun and interactive geography quiz designed to test your knowledge of 
 ![Home Page](assets/images/Home.page.png)
 
  Home page includes:
-- Name "Geograpghy quiz" with background image of a globe as a symbol of geography
-- Button "Start Quiz", by clicking which you start the quiz and open the questions
-- Instructions part with clearly written instructions for playing the quiz
+- The title "Geography Quiz" with a background image of a globe symbolizing geography.
+- Button "Start Quiz", by clicking which you start the quiz and open the questions.
+- Instructions part with clearly written instructions for playing the quiz.
 
 ## Questions & Answers
 #### Answering Questions
@@ -91,8 +91,7 @@ A consistent color palette was chosen to maintain a cohesive look throughout the
 ### Techonogy used
 - **HTML**: Structure of the web pages.
 - **CSS**: Styling of the web pages, including responsive design for various screen sizes.
-- **JavaScript**: Interactive features such as buttons, choosing options and score tracking.
-- **Google Fonts**: Custom fonts for a unique look and feel.
+- **JavaScript**: Interactive features (buttons, answer selection, score tracking).
 - **Favicon**: Globe icon for the website.
 
 ### Deployment

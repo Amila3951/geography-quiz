@@ -47,7 +47,7 @@ h1 {
 
 #title-container::before {
     content: "";
-    background-image: url("/assets/images/microsoftteams-image2.jpg");
+    background-image: url("../images/globe.jpg");
 
     background-size: cover;
     background-position: center;
