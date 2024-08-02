@@ -6,8 +6,8 @@ const questions = [{
     },
     {
         question: "Which country is in Europa?",
-        options: ["Florida", "Peru", "Bosnia and Herzegowina", "India"],
-        answer: "Bosnia and Herzegowina"
+        options: ["Florida", "Peru", "Bosnia and Herzegovina", "India"],
+        answer: "Bosnia and Herzegovina"
     },
     {
         question: "What is the Capital of Macedonia?",
@@ -20,7 +20,7 @@ const questions = [{
         answer: "Europa and Asia"
     },
     {
-        question: "Which  river flows through Egypt?",
+        question: "Which river flows through Egypt?",
         options: ["Amazon", "Nile", "Una"],
         answer: "Nile"
     },
@@ -46,8 +46,8 @@ const questions = [{
     },
     {
         question: "What is the largest desert in the world?",
-        options: ["Sahara", "Antartica", "Gobi"],
-        answer: "Antartica"
+        options: ["Sahara", "Antarctica", "Gobi"],
+        answer: "Antarctica"
     },
 ];
 
@@ -91,11 +91,14 @@ function checkAnswer(selectedOption) {
 
     answerButtons.forEach(button => {
         if (button.textContent === currentQuestion.answer) {
-            button.classList.add('correct'); // Highlight correct answer
-        } else if (button.textContent === selectedOption) { // When choosed answer is incorrect, it became red
+            // Highlight correct answer
+            button.classList.add('correct'); 
+            // When chosen answer is incorrect, it became red
+        } else if (button.textContent === selectedOption) { 
             button.classList.add('incorrect');
         }
-        button.disabled = true; // Disable all buttons after selection
+        // Disable all buttons after selection
+        button.disabled = true; 
     });
 
     if (selectedOption === currentQuestion.answer) {
@@ -105,15 +108,15 @@ function checkAnswer(selectedOption) {
     }
 
     updateScore();
-
-    setTimeout(() => { // One second delay until next question
+    // Three second delay until next question
+    setTimeout(() => { 
         if (currentQuestionIndex < questions.length - 1) {
             currentQuestionIndex++;
             showQuestion();
         } else {
             endQuiz();
         }
-    }, 1000);
+    }, 3000);
 }
 
 // Function to update the displayed score

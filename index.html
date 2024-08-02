@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geography Quiz</title>
-
     <!-- Fav Icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/earth.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/earth.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/earth.png">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Meta Information -->
     <meta name="description"
         content="Test your knowledge of world geography with this interactive quiz! Challenge yourself with questions about countries, capitals, continents, landmarks, and more. Fun and educational for geography enthusiasts of all ages.">
     <meta name="keywords" content="geography, quiz, Test, game, countries, world, destinations, knowledge">
@@ -18,9 +18,10 @@
 
 <body>
     <div id="quiz-container">
-
+        <!-- First page -->
         <div id="start-screen">
-            <div id="title-container"> 
+            <div id="title-container">
+                <!-- Title -->
                 <h1>Geography Quiz</h1>
             </div>
             <div id="content-container">
@@ -29,6 +30,7 @@
                 <!-- Instructions on first page -->
                 <div id="instructions">
                     <strong>Instructions:</strong>
+                    <!-- Instructions list -->
                     <ul>
                         <li>Read each question carefully.</li>
                         <li>Choose the correct answer from the options.</li>
@@ -38,12 +40,13 @@
                 </div>
             </div>
         </div>
-    
+        <!-- Queastions and Answers -->
         <div id="question-screen" style="display: none;">
             <h2 id="question-text"></h2>
             <div id="answer-options"></div>
             <p id="score">Correct: 0 | Incorrect: 0</p> <!-- This code was inspired/adapted from Love Math Project -->
         </div>
+        <!-- End Screen -->
         <div id="end-screen" style="display: none;">
             <h2>Quiz Over!</h2>
             <p id="final-score"></p>
@@ -52,6 +55,6 @@
             <button id="exit-button">Exit</button>
         </div>
     </div>
-        <script src="assets/js/script.js"></script>
+<script src="assets/js/script.js"></script>
 </body>
 </html>
